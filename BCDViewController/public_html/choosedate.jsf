@@ -8,7 +8,7 @@
                 <af:gridRow height="50px" id="gr2">
                     <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc2">
                         <!-- Header -->
-                        <af:outputText value="DOAG 2019: JDev 12.2.1.4 Was gibt's neues: af:panelTabbed" id="ot1"
+                        <af:outputText value="af:chooseDate" id="ot1"
                                        inlineStyle="font-size:x-large;"/>
                         <af:spacer id="s1" width="100"/>
                         <af:button text="Back" id="b1" action="index"/>
