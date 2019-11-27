@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.22.48" id="choosedatePageDef"
+                Package="de.hahn.blog.doag2019app.view.pageDefs">
+    <parameters/>
+    <executables>
+        <variableIterator id="variables">
+            <variable Name="defaultDate" Type="java.util.Date"/>
+            <variable Name="myDate" Type="java.util.Date"/>
+            <variable Name="selectedDates" Type="java.lang.String"/>
+        </variableIterator>
+    </executables>
+    <bindings>
+        <attributeValues IterBinding="variables" id="defaultDate1">
+            <AttrNames>
+                <Item Value="defaultDate"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="variables" id="myDate1">
+            <AttrNames>
+                <Item Value="myDate"/>
+            </AttrNames>
+        </attributeValues>
+    </bindings>
+</pageDefinition>

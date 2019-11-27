@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.2.1.22.48" id="DataBindings"
+             SeparateXMLFiles="false" Package="de.hahn.blog.choosedate.view" ClientType="Generic">
+  <pageMap>
+    <page path="/choosedate.jsf" usageId="de_hahn_blog_choosedate_view_choosedatePageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="de_hahn_blog_choosedate_view_choosedatePageDef"
+          path="de.hahn.blog.choosedate.view.pageDefs.choosedatePageDef"/>
+  </pageDefinitionUsages>
+</Application>
