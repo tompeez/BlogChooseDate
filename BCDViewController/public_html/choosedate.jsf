@@ -8,10 +8,7 @@
                 <af:gridRow height="50px" id="gr2">
                     <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc2">
                         <!-- Header -->
-                        <af:outputText value="af:chooseDate" id="ot1"
-                                       inlineStyle="font-size:x-large;"/>
-                        <af:spacer id="s1" width="100"/>
-                        <af:button text="Back" id="b1" action="index"/>
+                        <af:outputText value="af:chooseDate" id="ot1" inlineStyle="font-size:x-large;"/>
                     </af:gridCell>
                 </af:gridRow>
                 <af:gridRow height="100%" id="gr1">
@@ -19,6 +16,7 @@
                         <!-- Content -->
                         <af:inputDate label="Set Default Date:" value="#{bindings.defaultDate1.inputValue}" id="id2"
                                       autoSubmit="true"/>
+                        <af:spacer id="s1" height="10px"/>
                         <af:panelGroupLayout id="pgl2" layout="horizontal">
                             <af:inputDate label="Datum" id="id1" chooseId="cd1"/>
                             <af:chooseDate id="cd1" defaultValue="#{bindings.defaultDate1.inputValue}"
@@ -27,17 +25,19 @@
                         <af:panelGroupLayout id="pgl3" layout="vertical">
                             <af:spacer id="s2" height="50"/>
                             <af:outputText value="Multiselect af:chooseDate" id="ot2" inlineStyle="font-size:x-large;"/>
+                            <af:spacer id="s3" height="10px"/>
                             <af:chooseDate id="cd2" clientComponent="true">
                                 <af:clientListener type="dateSelection" method="dateSelectionEventHandler"/>
                                 <af:clientListener type="load" method="chooseDateLoadEventHandler"/>
                             </af:chooseDate>
+                            <af:spacer id="s4" height="5px"/>
                             <af:button text="Selected Dates" id="b2">
                                 <af:clientListener method="processSelectedDates" type="action"/>
                                 <af:serverListener type="processSelectedDates"
                                                    method="#{viewScope.ChooseDateBean.procressSelectedDates}"/>
                             </af:button>
                             <af:inputText label="Selected Dates" id="it1" partialTriggers="b2"
-                                          value="#{viewScope.ChooseDateBean.selectedDatesString}" rows="3" columns="100"
+                                          value="#{viewScope.ChooseDateBean.selectedDatesString}" rows="5" columns="100"
                                           binding="#{viewScope.ChooseDateBean.selectedDates}" readOnly="true"/>
                         </af:panelGroupLayout>
                     </af:gridCell>

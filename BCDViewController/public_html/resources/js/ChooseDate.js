@@ -2,7 +2,7 @@
  * Shows a popup from an "action" type event.
  * @param {AdfActionEvent} actionEvent the event being handled
  */
-var dates = []
+var dates = [];
 var minDate;
 var maxDate;
 
